@@ -1,56 +1,81 @@
-/* styles.css */
-
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .nav-bar {
-    background-color: #333;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-  }
-  
-  .top-bar {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .top-bar img {
-    max-height: 50px;
-  }
-  
-  .nav-bar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  .nav-bar ul li {
-    position: relative;
-  }
-  
-  .nav-bar ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .nav-bar ul li a:hover {
-    background-color: #111;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow:
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.nav-bar {
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically in the center */
+  padding: 10px; /* Add padding to create space around the nav bar */
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar img {
+  max-height: 100px;
+  max-width: 360px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-menu li a:hover {
+  background-color: #2f1fc2;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add box-shadow */
+  z-index: 1; /* Ensure dropdown is above other elements */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  margin-top: 120px; /* Adjust this value if your nav-bar height changes */
+  padding: 20px;
+}
