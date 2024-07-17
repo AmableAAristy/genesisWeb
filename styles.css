@@ -114,3 +114,21 @@ body {
   margin: 0;
   padding: 0;
 }
+.overlap-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.overlap-picture {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 10px solid transparent;
+}
+
+.overlap-picture:nth-child(2) {
+  left: 70px; /* Adjust to control the amount of overlap */
+  top: 70px; /* Adjust to control the amount of overlap */
+  border: 10px aqua;
+}
