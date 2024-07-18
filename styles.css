@@ -175,7 +175,7 @@ body {
 .testimonials {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   justify-content: center;
   align-items: center;
@@ -207,7 +207,7 @@ body {
 
 cite {
   position: absolute;
-  bottom: 10px;
+  bottom: 0%;
   right: 10px;
   font-weight: bold;
   white-space: nowrap;
@@ -248,34 +248,68 @@ cite {
   padding: 20px;
 }
 
+.contact-info a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  background-color: #2f1fc2;
+  color: white;
+}
+
 /* Media Queries for Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   .nav-bar{
-    height: 200px;
+    height: 100px;
   }
   
+  .caption {
+  bottom: 35%;
+  }
 
   .nav-menu li a {
     padding: 5px;
   }
+.slides{
+  width: 100vw;   /* Full viewport width */
+    height: 50vh;
+}
 
-  .top-bar img {
-    max-height: 70px;
+  .slides img {
+    width: 100vw;   /* Full viewport width */
+    height: 50vh;  /* Full viewport height */
+    object-fit: cover; /* Scale image to cover the container without distortion */
   }
 
   .middle {
     padding: 0 5%;
   }
 
+
+  .testimonials {
+    width: 100vw;
+    
+    padding-bottom: 100px;
+  }
+
+  cite {
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
   .quotes {
     flex-direction: column;
   }
 
   .slides{
-    padding-top: 200px;
+    padding-top: 100px;
   }
 
-  .side-content{
-    padding-top: 200px;
-  }
+  
 }
