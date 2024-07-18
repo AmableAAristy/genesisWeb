@@ -250,6 +250,7 @@ cite {
 @media screen and (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
+    max-height: 200px;
   }
 
   .nav-menu li a {
