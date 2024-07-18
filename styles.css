@@ -250,11 +250,11 @@ cite {
 @media screen and (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
-    max-height: 10px;
+    max-height: 700px;
   }
 
   .nav-menu li a {
-    padding: 10px;
+    padding: 5px;
   }
 
   .top-bar img {
@@ -267,5 +267,13 @@ cite {
 
   .quotes {
     flex-direction: column;
+  }
+
+  .slides{
+    padding-top: 200px;
+  }
+
+  .side-content{
+    padding-top: 100px;
   }
 }
