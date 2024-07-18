@@ -266,6 +266,10 @@ cite {
   .nav-bar{
     height: 100px;
   }
+
+  .nav-menu{
+    justify-content: space-evenly;
+  }
   
   .caption {
   bottom: 35%;
@@ -273,6 +277,7 @@ cite {
 
   .nav-menu li a {
     padding: 5px;
+    
   }
 .slides{
   width: 100vw;   /* Full viewport width */
