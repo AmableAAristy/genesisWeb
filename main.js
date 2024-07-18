@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     .catch(error => console.error('Error fetching navbar:', error));
 
-  fetch('footer.html')
+  fetch('footerbar.html')
     .then(response => response.text())
     .then(data => {
       document.getElementById('footer-container').innerHTML = data;
