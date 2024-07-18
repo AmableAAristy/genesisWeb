@@ -231,3 +231,9 @@ cite{
   text-decoration: none;
   padding: 14px 16px;
 }
+
+.side-content {
+  margin-top: 100px; /* Adjust this value if your nav-bar height changes */
+  padding: 20px;
+}
+
