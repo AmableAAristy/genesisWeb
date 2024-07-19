@@ -129,36 +129,6 @@ body {
   text-align: center;
 }
 
-.overlap-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-
-.image-container {
-  position: relative;
-  width: 100%;
-  padding-top: 87.5%;
-  overflow: hidden;
-}
-
-.overlap-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.overlap-image--second {
-  left: 40%;
-  top: 40px;
-}
 
 .three-pictures {
   display: flex;
