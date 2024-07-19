@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Function to determine base path based on current URL
   function getBasePath() {
     const path = window.location.pathname;
@@ -46,20 +46,20 @@ function updateNavbarLinks(basePath) {
 let slideIndex = 0;
 
 function showSlides() {
-    const slides = document.querySelectorAll('.slide');
-    slides.forEach((slide, index) => {
-      slide.style.display = 'none';
-    });
-    
-    slideIndex++;
-    if (slideIndex > slides.length) {
-      slideIndex = 1;
-    }
-    
-    slides[slideIndex - 1].style.display = 'block';
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
+  const slides = document.querySelectorAll('.slide');
+  slides.forEach((slide, index) => {
+    slide.style.display = 'none';
+  });
+
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
   }
-  
-  
+
+  slides[slideIndex - 1].style.display = 'block';
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+
 
 document.addEventListener('DOMContentLoaded', showSlides);
