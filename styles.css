@@ -203,6 +203,7 @@ body {
   border-left: 5px solid #4580f4;
   box-sizing: border-box;
   position: relative;
+  font-style: italic;
 }
 
 cite {
