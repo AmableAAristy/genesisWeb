@@ -29,7 +29,10 @@ document.addEventListener('DOMContentLoaded', function () {
       updateFooterLinks(basePath);
     })
     .catch(error => console.error('Error fetching footer:', error));
-});
+
+
+  addHeadElements(basePath);
+});//end load
 
 function updateNavbarLinks(basePath) {
   document.querySelectorAll('.nav-bar a').forEach(link => {
@@ -74,3 +77,26 @@ function showSlides() {
 
 
 document.addEventListener('DOMContentLoaded', showSlides);
+
+
+function addHeadElements(basePath) {
+  const head = document.head;
+
+  const headElements = [
+    `<link rel="apple-touch-icon" sizes="180x180" href="${basePath}/assets/favicom/apple-touch-icon.png">`,
+    `<link rel="icon" type="image/png" sizes="32x32" href="${basePath}/assets/favicom/favicon-32x32.png">`,
+    `<link rel="icon" type="image/png" sizes="16x16" href="${basePath}/assets/favicom/favicon-16x16.png">`,
+    `<link rel="manifest" href="${basePath}/assets/favicom/site.webmanifest">`,
+    `<link rel="mask-icon" href="${basePath}/assets/favicom/safari-pinned-tab.svg" color="#5bbad5">`,
+    `<meta name="msapplication-TileColor" content="#da532c">`,
+    `<meta name="theme-color" content="#ffffff">`
+  ];
+
+
+  headElements.forEach(elementString => {
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = elementString;
+    const element = tempDiv.firstChild;
+    head.appendChild(element);
+  });
+}
