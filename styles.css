@@ -57,7 +57,7 @@ body {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -107,7 +107,7 @@ body {
 .caption {
   position: relative;
   bottom: 25%;
-  left: 0%;
+  left: 0;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
@@ -178,7 +178,7 @@ body {
 
 cite {
   position: absolute;
-  bottom: 0%;
+  bottom: 0;
   right: 10px;
   font-weight: bold;
   white-space: nowrap;
@@ -232,6 +232,13 @@ cite {
   color: white;
 }
 
+#maps {
+  width: 600px;
+  height: 450px;
+  border: 0;
+}
+
+
 /* Media Queries for Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   .nav-bar {
@@ -284,4 +291,8 @@ cite {
   .slides {
     padding-top: 100px;
   }
+  #maps{
+    width: 100vw;
+  }
+
 }
